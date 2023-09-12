@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.1] 2023-09-11
+- Fix issue where replace-home was checking for 'true/false' rather than 'on/off'.
+
 ## [0.4.0] Fork - 2023-09-11
 ### Features
 - Fork from KeyesHsu/tmux-auto-rename. Thanks!

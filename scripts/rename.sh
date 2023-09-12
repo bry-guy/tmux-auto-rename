@@ -22,7 +22,7 @@ get_current_dir() {
 
 replace_home() {
 		local replace_home=$(get_tmux_option "$replace_home" "$default_replace_home")
-		if [ $replace_home == "true" ]; then
+		if [ $replace_home == "on" ]; then
 				if [ $current_dir == "$(echo $HOME | xargs basename)" ]; then
 						current_dir="~"
 				fi
