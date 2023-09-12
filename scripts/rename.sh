@@ -6,7 +6,6 @@ source "$CURRENT_DIR/variables.sh"
 source "$CURRENT_DIR/helpers.sh"
 
 check_git_only() {
-    # Check if automatic rename only in Git repositories
     local git_only_=$(get_tmux_option "$git_only" "$default_git_only")
     if [ $git_only_ == "on" ] && [ "$is_git" != "true" ]; then
         exit 0
