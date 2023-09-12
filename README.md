@@ -49,7 +49,7 @@ Contributions, issues and feature requests are welcome!
 
 Feel free to check [issues page](https://github.com/bry-guy/tmux-auto-rename/issues). 
 
-## 📝 License
+## License
 
 Copyright © 2023 [Bryan Smith](https://github.com/bry-guy).
 
