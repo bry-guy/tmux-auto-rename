@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] Fork - 2023-09-11
+### Features
+- Fork from KeyesHsu/tmux-auto-rename. Thanks!
+- Remove zoom indicator functionality.
+- Add hook to refresh-client. Update instructions to indicate refresh-client hook hotkey.
+
 ## [0.3.2] - 2023-06-01
 ### Fixes
 - Fix rename when in git dir but not in work dir.
@@ -27,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automatical rename tmux window with current directory name.
 
 
-[Unreleased]: https://github.com/KeyesHsu/tmux-auto-rename/compare/0.3.2...HEAD
+[Unreleased]: https://github.com/bry-guy/tmux-auto-rename/compare/0.4.0...HEAD
 [0.3.2]: https://github.com/KeyesHsu/tmux-auto-rename/releases/tag/0.3.2
 [0.3.1]: https://github.com/KeyesHsu/tmux-auto-rename/releases/tag/0.3.1
 [0.3.0]: https://github.com/KeyesHsu/tmux-auto-rename/releases/tag/0.3.0

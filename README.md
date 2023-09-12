@@ -1,20 +1,18 @@
-<h1 align="center">Welcome to tmux-auto-rename 👋</h1>
-<p>
-  <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/KeyesHsu/tmux-auto-rename">
-  <a href="https://github.com/KeyesHsu/tmux-auto-rename/blob/main/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-</p>
+Rename tmux window with current directory name.
 
+## Credit
 
-Automatical rename tmux window with current directory name.
+Forked from [KeyesHsu/tmux-auto-rename](https://github.com/KeyesHsu/tmux-auto-rename). Thanks @KeyesHsu!
 
-_**Note**_: Now only works when select pane.
+## Usage
 
+`tmux-auto-rename` will automatically be invoked when you select a pane, window, or create a new window.
 
-##### Resources:
-* [Changelog](CHANGELOG.md)
+To invoke it manually, call `refresh-client`. Bind a hotkey in your `.tmux.conf` to make refreshing easy:
 
+```
+bind R refresh-client
+```
 
 ## Installation
 
@@ -23,24 +21,11 @@ _**Note**_: Now only works when select pane.
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
 ```tmux.conf
-set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'bry-guy/tmux-auto-rename'
 ```
 
 Hit `prefix + I` to fetch the plugin and source it. You should now be able to use the plugin.
 
-### Manual Installation
-
-Clone the repo:
-
-```sh
-$ git clone https://github.com/KeyesHsu/tmux-auto-rename ~/clone/path
-```
-
-Add this line to your `.tmux.conf`:
-
-```tmux.conf
-run-shell ~/clone/path/auto-rename.tmux
-```
 
 ## Options
 
@@ -54,34 +39,18 @@ Default: `on`
 set -g @auto-rename-git-only "off"
 ```
 
-### `@show-zoom-indicator`
+##### Resources:
+* [Changelog](CHANGELOG.md)
 
-Show zoom indicator when rename.
 
-Default: `off`
+## Contributing
 
-```sh
-set -g @show-zoom-indicator "on"
-```
+Contributions, issues and feature requests are welcome!
 
-## Author
-
-👤 **Keyes Hsu**
-
-* Github: [@KeyesHsu](https://github.com/KeyesHsu)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/KeyesHsu/tmux-auto-rename/issues). 
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
+Feel free to check [issues page](https://github.com/bry-guy/tmux-auto-rename/issues). 
 
 ## 📝 License
 
-Copyright © 2022 [Keyes Hsu](https://github.com/KeyesHsu).<br />
-This project is [MIT](https://github.com/KeyesHsu/tmux-auto-rename/blob/main/LICENSE) licensed.
+Copyright © 2023 [Bryan Smith](https://github.com/bry-guy).
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+This project is [MIT](https://github.com/bry-guy/tmux-auto-rename/blob/main/LICENSE) licensed.

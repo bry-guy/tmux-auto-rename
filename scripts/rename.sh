@@ -21,15 +21,10 @@ get_current_dir() {
     fi
 }
 
-show_zoom_indicator() {
-    local zoom_indicator_=$(get_tmux_option "$zoom_indicator" "$default_zoom_indicator")
-    if [ $zoom_indicator_ == "on" ] && [ -n "$zoom_in" ]; then
-        current_dir="$current_dir(🔍️)"
-    fi
-}
-
 process_name() {
-    show_zoom_indicator
+		if [ "$current_dir" == "$(echo $HOME | xargs basename)" ]; then
+				current_dir="~"
+		fi
 }
 
 rename_window() {
