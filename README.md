@@ -31,12 +31,22 @@ Hit `prefix + I` to fetch the plugin and source it. You should now be able to us
 
 ### `@auto-rename-git-only`
 
-Automatic rename only in Git repositories.
+Automatically rename in Git repositories only.
 
 Default: `on`
 
 ```sh
 set -g @auto-rename-git-only "off"
+```
+
+### `@auto-rename-replace-home`
+
+Automatically rename `$HOME` to `~`.
+
+Default: `on`
+
+```sh
+set -g @auto-rename-replace-home "off"
 ```
 
 ##### Resources:
